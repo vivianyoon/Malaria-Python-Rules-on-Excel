@@ -8,13 +8,7 @@ This project demonstrates how business users can define validation logic in Exce
 
 ## 🚀 Live Demo
 
-👉 *(Add your Streamlit link here after deployment)*
-
----
-
-## 📸 App Preview
-
-*(Add screenshot here)*
+👉 *((https://malaria-python-rules-on-excel-sq5hw2jeynbuxemoqm8aq8.streamlit.app/))*
 
 ---
 
