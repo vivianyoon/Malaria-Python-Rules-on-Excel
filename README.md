@@ -1,55 +1,79 @@
 # 🦟 Malaria Excel Rule Engine
 
-A **Streamlit-based rule engine** for validating malaria data using rules defined in Excel.
+A **Streamlit web application** for validating malaria data using rules defined in Excel.
 
-This project allows non-technical users to define validation logic in Excel while Python dynamically applies those rules to real datasets.
+This project demonstrates how business users can define validation logic in Excel, while Python dynamically applies those rules to datasets — no code changes required.
 
 ---
 
-## 🚀 Demo
+## 🚀 Live Demo
 
-Upload:
+👉 *(Add your Streamlit link here after deployment)*
 
-* 📄 Rule workbook (Excel)
-* 📊 Malaria data workbook
+---
 
-Then:
+## 📸 App Preview
 
-* Run validation
-* View errors
-* Download processed Excel with summaries
+*(Add screenshot here)*
+
+---
+
+## 💡 Overview
+
+Data validation in Excel is often manual, error-prone, and hard to scale.
+
+This application solves that by:
+
+* Allowing rules to be defined in Excel
+* Automatically applying those rules to datasets
+* Generating clear validation outputs and summaries
 
 ---
 
 ## ✨ Features
 
-* Excel-driven validation (no code needed for rules)
-* Supports multiple rule types:
+* 📄 Upload rule workbook (Excel)
+* 📊 Upload malaria data workbook
+* ⚙️ Apply rule sets dynamically
+* 🧩 Supports multiple validation types:
 
-  * Missing value checks
-  * Choice validation
+  * Missing values
+  * Allowed choices
   * Numeric validation
   * Range checks
   * Date format validation
   * Date range validation
   * Conditional consistency checks
-  * Mapping / derived columns
-* Multi-sheet processing support
-* Automatic error summaries
-* Export clean Excel output with comments
+  * Mapping / derived fields
+* 📑 Multi-sheet processing
+* 🧾 Error summaries (type + detailed)
+* 📥 Download processed Excel output
 
 ---
 
 ## 🧠 How It Works
 
-1. Define rules in Excel (`Rules` + `Mappings` sheets)
-2. Upload rules + malaria dataset
-3. App dynamically applies rules
-4. Output includes:
+1. Rules are defined in Excel:
 
-   * `COMMENT` column with validation errors
-   * Error summary tables
-   * Processed Excel file
+   * `Rules` sheet → validation logic
+   * `Mappings` sheet → lookup transformations
+
+2. User uploads:
+
+   * Rule workbook
+   * Data workbook
+
+3. Application:
+
+   * Reads rules using Pandas
+   * Applies validation logic dynamically
+   * Adds a `COMMENT` column with errors
+
+4. Output:
+
+   * Processed dataset
+   * Error summary sheets
+   * Downloadable Excel file
 
 ---
 
@@ -67,12 +91,12 @@ Then:
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Installation & Run
 
-### 1. Clone repository
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Malaria-Python-Rules-on-Excel.git
+git clone https://github.com/vivianyoon/Malaria-Python-Rules-on-Excel.git
 cd Malaria-Python-Rules-on-Excel
 ```
 
@@ -90,21 +114,21 @@ streamlit run streamlit_rules_engine_app.py
 
 ---
 
-## 📊 Input Requirements
+## 📊 Input Files
 
 ### 🔹 Rule Workbook
 
-Must contain:
+Must include:
 
 * `Rules` sheet
 * `Mappings` sheet
 
-Rules define validation logic such as:
+Defines:
 
-* allowed values
-* numeric ranges
-* date formats
-* conditional checks
+* validation conditions
+* expected values
+* ranges
+* mappings
 
 ---
 
@@ -120,8 +144,8 @@ Rules define validation logic such as:
 The app generates:
 
 * ✅ Processed Excel file
-* ✅ `COMMENT` column with validation issues
-* ✅ Error summary by type
+* ✅ `COMMENT` column for validation errors
+* ✅ Error summary (by type)
 * ✅ Detailed error breakdown
 
 ---
@@ -135,34 +159,33 @@ The app generates:
 
 ---
 
-## 💡 Use Cases
+## 🌐 Deployment (Streamlit Cloud)
+
+1. Push this repository to GitHub
+2. Go to [https://share.streamlit.io](https://malaria-python-rules-on-excel-sq5hw2jeynbuxemoqm8aq8.streamlit.app/)
+3. Select:
+
+   * Repo: this repository
+   * File: `streamlit_rules_engine_app.py`
+4. Deploy
+
+---
+
+## 🎯 Use Cases
 
 * Health data validation
 * Excel-based rule engines
-* Data quality pipelines
+* Data quality assurance workflows
 * Non-technical rule configuration systems
 
 ---
 
-## 🌐 Deployment
+## 🔮 Future Improvements
 
-You can deploy this app using **Streamlit Cloud**:
-
-1. Push this repo to GitHub
-2. Go to https://share.streamlit.io
-3. Deploy using:
-
-   * Repo: this repository
-   * File: `streamlit_rules_engine_app.py`
-
----
-
-## 📌 Future Improvements
-
-* UI-based rule builder (no Excel needed)
+* UI-based rule creation (no Excel required)
 * Database integration
 * API version of rule engine
-* Logging & audit tracking
+* Logging and audit tracking
 * Performance optimization for large datasets
 
 ---
@@ -175,11 +198,12 @@ You can deploy this app using **Streamlit Cloud**:
 
 ## ⭐ Why This Project Matters
 
-This project demonstrates:
+This project showcases:
 
-* Real-world data validation workflows
+* Real-world data validation challenges
 * Excel + Python integration
 * Dynamic rule execution
 * Building tools for non-technical users
+* End-to-end data processing workflows
 
 ---
