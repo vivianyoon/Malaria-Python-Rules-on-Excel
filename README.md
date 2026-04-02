@@ -8,7 +8,7 @@ This project demonstrates how business users can define validation logic in Exce
 
 ## 🚀 Live Demo
 
-👉 *((https://malaria-python-rules-on-excel-sq5hw2jeynbuxemoqm8aq8.streamlit.app/))*
+👉 *(https://malaria-python-rules-on-excel-sq5hw2jeynbuxemoqm8aq8.streamlit.app/)*
 
 ---
 
