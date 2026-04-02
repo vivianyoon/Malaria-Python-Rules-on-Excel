@@ -418,7 +418,7 @@ def main():
     if data_file is None:
         st.warning("Upload a data workbook to continue.")
         st.stop()
-    sheet_names = []
+    sheet_names = [] 
     try:
         original_bytes = data_file.getvalue()
         xls = pd.ExcelFile(io.BytesIO(original_bytes))
