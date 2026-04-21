@@ -23,6 +23,12 @@ This application solves that by:
 * Generating clear validation outputs and summaries
 
 ---
+## ⭐ Key Highlights
+
+- Excel-driven rule engine for flexible validation
+- Designed for non-technical users (no coding required)
+- Supports multi-sheet data validation workflows
+- Generates structured error summaries for analysis
 
 ## ✨ Features
 
